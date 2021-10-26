@@ -1,0 +1,134 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+// ≥992px
++media-breakpoint-down(md)
+    .stages__container
+        grid-template-columns: 1fr 1fr 
+        grid-gap: 45px
+        margin-top: 45px
+    .stages
+        padding: 55px 0
+    .info__text-title
+        margin-top: 0
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 15px
+    .feedback
+        padding: 35px 0
+    .questions
+        padding: 55px 0
+    .fish
+        padding: 20px 0
+    .fish__container
+        grid-template-columns: 1fr
+    .fish__block-title
+        margin-bottom: 45px
+    .footer
+        padding: 55px 0 25px
+    .header__top-menu__humb
+        display: block
+    .header__top-menu nav
+        display: none
+    .header__title
+        font-size: 32px 
+        line-height: 40px
+    .header__pretitle
+        font-size: 16px 
+        line-height: 28px
+    .header__btn
+        margin-top: 50px
+    .header__top-menu nav ul li a
+        color: #83898F
+    .header__top-menu nav ul li
+        text-align: start
+        border-top: 2px solid#ECEFF2
+        margin-right: 0
+    .header__top-menu nav ul li a:before
+        display: block
+    .header__top-menu nav ul li:last-child
+        border-bottom: 2px solid#ECEFF2
+    .header__top .hopen span
+        background-color: #191C1F
+        margin-right: 2%
+    .header__top .hopen .header__top-hopen__logo
+        display: block
+    .header__top .hopen .header__top-menu__humb
+        display: flex
+        margin-top: 20px
+
+    
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+    .header__title
+        font-size: 24px 
+        line-height: 32px
+    .header__pretitle
+        font-size: 16px 
+        line-height: 28px
+    .header__btn
+        margin-top: 30px
+    .footer__form, .stages__container
+        grid-template-columns: 1fr
+    .header__title
+        margin-top: 105px
+    .stages__block
+        display: flex
+    .stages__block-box
+        margin-left: 15px
+    .info__container
+        display: flex
+        flex-wrap: wrap
+    .info__img
+        order: 1
+    .info__text
+        order: 2
+    .feedback
+        padding: 25px 0
+    .feedback__slider .slick-dots
+        bottom: -30px
+    .title
+        font-size: 24px
+        line-height: 32px
+    .fish__block-title
+        margin-bottom: 15px
+    .header__top-menu nav ul li a
+        color: #83898F
+    .header__top-menu nav ul li
+        text-align: start
+        border-top: 2px solid#ECEFF2
+        margin-right: 0
+    .header__top .hopen
+
+
+@media (max-width: 375px) 
+    .header__top .hopen
+        left: 0px
+        width: 100%
+    .header__top .hopen span
+        margin-right: 4%
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
